@@ -1,0 +1,489 @@
+body{
+    width: 100;
+}
+#header img{
+    width:170px;
+    height:120px;
+
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #c5b6e3;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+svg{
+    width: 30px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width:30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  li {
+    animation: slideIn 0.5s ease forwards;
+  }
+  /* Hover Effect */
+  li:hover {
+    background-color: #aa71b6;
+  }
+  
+
+
+
+#hero{
+   background-image: url("b9d36c6d858295952f3b7c734044330a\ \(1\).jpg");
+   height: 78vh;
+   width: 100%;
+   background-size: auto;
+   background-position: top 35% right 40%;
+   padding: 40px 0;
+   
+}
+#hero h1{
+    font-size: 200%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   padding: 50px 125px;
+   display:flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   padding-bottom: 30px;
+}
+#hero h1{
+    color: #088178;
+}
+
+#hero p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 0 125px;
+   display:flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   
+}
+#hero button{
+    margin-top: 15px;
+    padding: 5px 20px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    color: #088178;
+
+}
+.fe-box img{
+    height: 80px;
+}
+.section-p1{
+    padding: 40px 80px;  
+}
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:35px 25px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.04);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+    
+#feature .fe-box h4 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #ffe9ee;
+}
+#feature .fe-box:nth-child(2) h4{
+    background-color: rgb(221, 255, 243);
+}
+#feature .fe-box:nth-child(3) h4{
+    background-color: rgb(219, 246, 255);
+}
+#feature .fe-box:nth-child(4) h4{
+    background-color: rgb(249, 255, 223);
+}
+#feature .fe-box:nth-child(5) h4{
+    background-color: rgb(247, 227, 255);
+}
+
+
+
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("Editorial\ Fashion\ Accessory\ Brand\ Banner\ for\ Shopify.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h2{
+    color: #57674b;
+    font-size: 43px;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #ffe1e1;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+#banner button:hover{
+    background: #ff9d9d;
+    color: #fff;
+
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("Violet\ and\ Orange\ Abstract\ Geometric\ Memphis\ and\ Blobs\ 10.10\ Mega\ Sale\ Banner.png");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+
+}
+#sm-banner h1{
+    font-size: 60px;
+    font-weight: 300;
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #444444;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    outline: none;
+    transition: 0.2s;
+}
+
+#sm-banner .banner-box:hover button{
+    background: #a5663b;
+    border: 1px solid #a5663b;
+}
+#sm-banner .banner-box2:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+}
+#sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    background-image: url("Brown\ and\ Beige\ Minimalist\ Fashion\ Banner.png");
+}
+
+  #hero2{
+    background-image: url("Green\ Minimalist\ Summer\ Big\ Sale\ Medium\ Banner.png");
+    height: 78vh;
+    width: 100%;
+    background-size: auto;
+    background-position: center;
+    padding: 10px 0;
+    
+ }
+#shop-header img{
+    width:170px;
+    height:120px;
+
+}
+ 
+#shop-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #8f8f8f;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#hero3 {
+    background-image: url("Yellow\ illustration\ shop\ hello\ summer\ sale\ banner\ \(1\).png");
+    height: 78vh;
+    width: 100%;
+    background-size: auto;
+    background-position: center;
+    padding: 10px 0;
+    
+ }
+ #trending-header img{
+    width:170px;
+    height:120px;
+
+}
+ 
+#trending-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #bca5ea;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: none;
+}
+
+.notification.show {
+    display: block;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.search-container {
+    position: relative;
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: none;
+    max-height: 200px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-results p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-results p:hover {
+    background-color: #f0f0f0;
+}
+.container-fluid {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 50px 0px;
+    position: absolute; 
+}
+.container .search{
+    display: flex;
+    padding: 30px 10px;
+    justify-content: space-between;
+}
+.container .search h1{
+    letter-spacing: 3px;
+    display: inline-block;
+    border-bottom: 2px solid rgb(152, 22, 152);
+    padding-bottom: 10px;
+}
+.container .search input{
+    width: 60%;
+    padding: 5px 16px;
+    background: transparent;
+    border: 1px solid #000;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+.container .search input::placeholder{
+    color: rgb(149, 56, 158);
+    font-weight: 500;
+}
+

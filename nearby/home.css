@@ -1,0 +1,115 @@
+.price button {
+    background-color: #f2ed63;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Style for cart icon */
+.iconCart {
+    position: relative;
+    display: inline-block;
+}
+
+.iconCart img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.totalQuantity {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    background-color: #ff0000;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for cart container */
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.cart h2 {
+    margin-bottom: 20px;
+}
+
+.listCart .item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.listCart .item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.listCart .item .content {
+    flex: 1;
+}
+
+.listCart .item .quantity {
+    display: flex;
+    align-items: center;
+}
+
+.listCart .item .quantity button {
+    background-color: #ffe099;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.listCart .item .quantity button:hover {
+    background-color: #898989;
+}
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #474747;
+}
+.cart {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hide the cart */
+    width: 300px;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow-y: auto;
+    transition: right 0.3s ease; /* Add transition property */
+}
+
+/* Add class to show the cart */
+.cart.open {
+    right: 0;
+}
